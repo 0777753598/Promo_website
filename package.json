@@ -1,0 +1,20 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "to make our own website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0777753598/Promo_website.git"
+  },
+  "author": "darshana.soa@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0777753598/Promo_website/issues"
+  },
+  "homepage": "https://github.com/0777753598/Promo_website#readme"
+}

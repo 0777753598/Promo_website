@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/0777753598/Promo_website/issues"
   },
-  "homepage": "https://github.com/0777753598/Promo_website#readme"
+  "homepage": "https://github.com/0777753598/Promo_website#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }

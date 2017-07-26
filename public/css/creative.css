@@ -10,12 +10,12 @@ body {
 }
 body {
   /*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
 }
 hr {
   border-color: #F05F40;
   border-width: 2px;
-  /*max-width: 50px;*/
+  max-width: 75%;
 }
 hr.light {
   border-color: white;
@@ -36,15 +36,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
+  font-family: 'Indie Flower', cursive;
 }
 p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
+  font-family: 'Raleway', 'sans-serif';
 }
 .bg-primary {
-  background-color: #F05F40;
+  background-color: rgb(40, 68, 218);
 }
 .bg-dark {
   background-color: #222222;
@@ -171,7 +173,7 @@ header .header-content .header-content-inner h1 {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 30px;
+  font-size: 5em;
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
@@ -200,7 +202,7 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
   header .header-content .header-content-inner h1 {
-    font-size: 50px;
+    font-size: 4.5em;
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
@@ -282,7 +284,7 @@ header .header-content .header-content-inner p {
   margin: 0 auto 20px;
 }
 .text-primary {
-  color: #F05F40;
+  color: black;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;

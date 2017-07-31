@@ -251,6 +251,14 @@ hr.small {
     -ms-box-shadow: 0 4px 10px rgba(0,0,0,0.25), 0 2px 5px rgba(0,0,0,0.15);
     -o-box-shadow: 0 4px 10px rgba(0,0,0,0.25), 0 2px 5px rgba(0,0,0,0.15);
     box-shadow: 0 4px 10px rgba(0,0,0,0.25), 0 2px 5px rgba(0,0,0,0.15);
+    -webkit-transition: ease-in-out 0.2s;
+     -o-transition: ease-in-out 0.2s;
+     transition: ease-in-out 0.2s; 
+}
+
+.portfolio-item:hover {
+    -webkit-box-shadow: 0 6px 13px rgba(0,0,0,0.20), 0 10px 17px rgba(0,0,0,0.15); 
+    box-shadow: 0 6px 13px rgba(0,0,0,0.20), 0 10px 17px rgba(0,0,0,0.15);
 }
 
 .portfolio-item ul {

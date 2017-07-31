@@ -37,17 +37,17 @@
 
 </head>
 
- <!-- <script type="text/javascript">
+ <script type="text/javascript">
 	 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 	 (function(){
 	 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 	 s1.async=true;
-	 s1.src='https://embed.tawk.to/key/5979b6240d1bb37f1f7a6144/default';
+	 s1.src='https://embed.tawk.to/5979b6240d1bb37f1f7a6144/default';
 	 s1.charset='UTF-8';
 	 s1.setAttribute('crossorigin','*');
 	 s0.parentNode.insertBefore(s1,s0);
  })();
- </script> -->
+ </script>
 
 <body>
 
@@ -257,8 +257,18 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>CiperLabs</strong>
+            	<div class="col-md-4 ">
+            		<h4><strong>Our Services</strong></h4>
+            		<ul class="list-unstyled">
+            			<li>Web Development</li>
+            			<li>Web Hosting</li>
+            			<li>Domain Name Service</li>
+            			<li>Search Engin Optimization</li>
+            			
+            		</ul>
+            	</div>
+                <div class="col-md-4 text-center">
+                    <h4><strong>Contact Us Here</strong>
                     </h4>
                     <p>No 341/7,Watareka,
                         <br>Padukka, Sri lanka</p>
@@ -276,12 +286,15 @@
                             <a href="https://twitter.com/CiperLabs"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
                         <li>
-                            <a href="https://ciperlabs.com"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                            <a href="https://www.linkedin.com/in/ciper-labs-966951147"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
                     <hr class="small">
                     <p class="text-muted">Copyright &copy; www.ciperlabs.com 2017</p>
                 </div>
+            </div>
+            <div class="col-md-4 text-center">
+            	
             </div>
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
@@ -291,34 +304,10 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
-
-    var speed_1 = 0.5;
-	var speed_2 = 0.3;
-	var speed_3 = 0.1;
-	var backgrounds = document.getElementsByClassName('header');
-
-	console.log(backgrounds[0].style.backgroundPosition+" "+backgrounds[1].style.backgroundPosition+" "+backgrounds[2].style.backgroundPosition)
-
-	window.onscroll = function(){
-		// console.log(window.pageYOffset);
-		var pageOffset = window.pageYOffset;
-		
-		var front_mountain = backgrounds[0];
-		var val = "50%"+(pageYOffset*speed_1)+"px";
-		// a.style.backgroundPosition = d*speed_1;
-		front_mountain.style.backgroundPosition = val;
-		var green_mountains = backgrounds[1];
-		var new_val = "50%"+(pageYOffset*speed_2)+"px";
-		green_mountains.style.backgroundPosition = new_val;
-		// console.log("this is backgroiunf "+a);
-		var background = backgrounds[2];
-		var v = "50%"+(pageYOffset*speed_3)+"px";
-		background.style.backgroundPosition = v;
-
-	}
 
     $(document).ready(function(){
     	$("#main_heading").effect("bounce",{times:3},2000);
@@ -394,8 +383,10 @@
     //         // Handle the mouse leave event
     //         that.on('mouseleave', onMapMouseleaveHandler);
     //     }
-    //     // Enable map zooming with mouse scroll when the user clicks the map
+    //     // Enable map zooming with mouse scroll when the user clicks the 
     // $('.map').on('click', onMapClickHandler);
+
+
     </script>
 
 </body>

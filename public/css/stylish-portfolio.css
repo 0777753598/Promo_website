@@ -6,6 +6,8 @@
 
 /* Global Styles */
 
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 html,
 body {
     width: 100%;
@@ -25,8 +27,9 @@ body {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
-    font-weight: 700;
+    font-size: 5em;
+    font-weight: 500;
+    font-family: 'Indie Flower', cursive;
     
 
 }
@@ -249,7 +252,7 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 10px 0;
 }
 
 #to-top {
@@ -260,14 +263,14 @@ footer {
 }
 
 .header.parallax-1{
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background.png');
 }
 
 .header.parallax-2{
-    background-image: url('../img/green_mountains.png');
+    /*background-image: url('../img/green_mountains.png');*/
 }
 .header.parallax-3{
-    background-image: url('../img/front_mountain.png');
+    background-image: url('../img/lap.png');
 }
 
 @keyframes fade {

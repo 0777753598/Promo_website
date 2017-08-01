@@ -302,12 +302,6 @@ hr.small {
     }
 }
 
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
 .map iframe {
     pointer-events: none;
 }
@@ -334,6 +328,16 @@ footer {
 }
 .header.parallax-3{
     background-image: url('../img/lap.png');
+}
+
+.text   {
+    text-align: left;
+}
+
+@media(max-width:768px) {
+    .text   {
+        text-align: center;
+    }
 }
 
 

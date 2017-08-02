@@ -358,13 +358,15 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    -webkit-animation: fadeIn 2s ease-in-out infinite, scale 2s ease-in infinite;
-    -o-animation: fadeIn 2s ease-in-out infinite, scale 2s ease-in infinite ;
-    animation: fadeIn 2s ease-in-out infinite, scale 2s ease-in infinite;
+    
 }
 
 .center h1 {
    font-family: 'Special Elite', cursive;
+   font-size: 2em;
+   -webkit-animation: fadeIn 2s ease-in-out infinite, scale 2s ease-in infinite;
+    -o-animation: fadeIn 2s ease-in-out infinite, scale 2s ease-in infinite ;
+    animation: fadeIn 2s ease-in-out infinite, scale 2s ease-in infinite;
 }
 
 @keyframes fadeIn {

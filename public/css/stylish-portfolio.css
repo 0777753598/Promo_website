@@ -34,24 +34,19 @@ ul {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 6em;
+    font-size: 6.75em;
     font-weight: 100;
     font-family: 'Lobster Two', cursive;
     /*font-family: 'Poiret One', cursive;*/
     color:white;
-    animation-name: fade;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-timing-function:cubic-bezier(0.01, 0.75, 1, 1.01);
-    animation-iteration-count: 1;
-    
 
 }
 .text-vertical-center h3{
     color : black;
     font-weight: 900;
-    font-size: 2em;
+    font-size: 2.5em;
     font-family: 'Poiret One', cursive;
+    color: white;
 }
 
 /* Custom Button Styles */
@@ -211,6 +206,7 @@ hr.small {
 
 .services {
     padding: 50px 0;
+    background-color: #0d4474;
 }
 
 .service-item {
@@ -290,6 +286,14 @@ hr.small {
 .map {
     height: 500px;
 }
+@keyframes typing { 
+        from { width: 0 } 
+    }
+@keyframes blink-caret { 
+        50% { 
+            border-color: transparent; 
+        } 
+    }
 
 @keyframes fade {
     0%{
@@ -333,6 +337,25 @@ footer {
 .text   {
     text-align: left;
 }
+
+.fa-circle::before{
+    text-shadow: 0 5px 10px rgba(0,0,0,0.35), 0 3px 6px rgba(0,0,0,0.25);
+}
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    z-index: 10000;
+}
+.center {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 
 @media(max-width:768px) {
     .text   {

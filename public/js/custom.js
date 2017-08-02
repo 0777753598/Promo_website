@@ -1,4 +1,9 @@
 // if we have three layers to be parallax we need three speeds to move them seperately
+	$(document).ready(function(){
+		$("#loader")[0].style.display = "none";
+	});
+
+
 	var chat = document.getElementById('innerWrapper');
 	console.log(chat);
 

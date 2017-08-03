@@ -3,10 +3,31 @@
 		window.onload = function(e){
 			$("#loader")[0].style.background = "transparent";
 			$("#loader").addClass("fadeOut");
-			// $("#loader")[0].style.visibility = "hidden";
+			show_more_less();
 
 		}
-	
+
+
+	function show_more_less(){
+		var showChar = 100;
+		var moretoShow = "...";
+		var more = "Learn More";
+		var less = "Got it";
+
+		$('.more').each(function() {
+		var content = $(this).html();
+
+		if(content.length > showChar) {
+
+			var c = content.substr(0, showChar);
+			var h = content.substr(showChar-1, content.length - showChar);
+
+			var html = c + '<span class="moreellipses">' + moretoShow+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;</span>';
+
+			$(this).html(html);	}
+
+	});
+	}	
 
 
 	var chat = document.getElementById('innerWrapper');

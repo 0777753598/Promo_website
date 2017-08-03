@@ -369,12 +369,11 @@ footer {
     transition: ease-out 2s;: 
     
 }
-
-.fade_out {
-    animation: fade_out 2s ease-out;
-    -webkit-animation-delay: 1s;
-    -o-animation-delay: 1s;
-    animation-delay: 1s;: 
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(2);
+  transition: visibility 0s 2s, opacity 2s linear ,transform 2s linear;
 }
 
 .center h1 {
@@ -403,7 +402,6 @@ footer {
     }
     100%{
         opacity: 0;
-        visibility: hidden;
         transform: scale(2);
     }
 }

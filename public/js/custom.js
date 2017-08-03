@@ -2,8 +2,8 @@
 	//desable the loader when page loads
 		window.onload = function(e){
 			$("#loader")[0].style.background = "transparent";
-			$("#loader").addClass("fade_out");
-			$("#loader")[0].style.visibility = "hidden";
+			$("#loader").addClass("fadeOut");
+			// $("#loader")[0].style.visibility = "hidden";
 
 		}
 	

@@ -1,7 +1,10 @@
 // if we have three layers to be parallax we need three speeds to move them seperately
 	//desable the loader when page loads
 		window.onload = function(e){
-			$("#loader")[0].style.display = "none";
+			$("#loader")[0].style.background = "transparent";
+			$("#loader").addClass("fade_out");
+			$("#loader")[0].style.visibility = "hidden";
+
 		}
 	
 

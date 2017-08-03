@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
-@import url('https://fonts.googleapis.com/css?family=VT323');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700');
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
 html,
@@ -242,7 +242,7 @@ hr.small {
 .portfolio-item {
     /*margin : 0 10px;*/
     margin-bottom: 20px;
-    padding: 25px;
+    /*padding: 25px;*/
     border-radius: 5px;
     -webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.25), 0 2px 5px rgba(0,0,0,0.15);
     -moz-box-shadow: 0 4px 10px rgba(0,0,0,0.25), 0 2px 5px rgba(0,0,0,0.15);
@@ -259,11 +259,41 @@ hr.small {
     box-shadow: 0 6px 13px rgba(0,0,0,0.20), 0 10px 17px rgba(0,0,0,0.15);
 }
 
+.portfolio-item h2 {
+    margin: 0 0 20px 0;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;  
+}
+
 .portfolio-item ul {
-    padding: 0;
+    padding: 25px;
+    padding-top: 0;
     margin: 0;
     list-style: none;
     font-size: 18px;
+}
+
+.portfolio-item ul li:before{
+    content: "\f00c"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+                 /* same as padding-left set on li */
+    width: 1.3em; /* same as padding-left set on li */
+}
+
+.portfolio-item ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.portfolio-item ul li:last-child{
+    border: 0;
 }
 
 .img-portfolio {
@@ -505,6 +535,10 @@ footer {
 
 @media(max-width:768px) {
     .text   {
+        text-align: center;
+    }
+
+    .portfolio-item ul li {
         text-align: center;
     }
 }

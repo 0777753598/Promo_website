@@ -1,46 +1,44 @@
-// if we have three layers to be parallax we need three speeds to move them seperately
 	//desable the loader when page loads
-		window.onload = function(e){
-			$("#loader")[0].style.background = "transparent";
-			$("#loader").addClass("fadeOut");
-			show_more_less();
+	window.onload = function(e){
+		$("#loader")[0].style.background = "transparent";
+		$("#loader").addClass("fadeOut");
+		
 
-		}
+	}
 
+	var $animation_elements = $('.animated');
+	var $window = $(window);
 
-	function show_more_less(){
-		var showChar = 100;
-		var moretoShow = "...";
-		var more = "Learn More";
-		var less = "Got it";
+	function check_if_in_view(){
+		// console.log	("in the animation");
+		var window_height = $window.height();
+		var window_top_position = $window.scrollTop();
+		var window_bottom_position = (window_height + window_top_position);
 
-		$('.more').each(function() {
-		var content = $(this).html();
+		$.each($animation_elements,function(){
+			var $element = $(this);
+			var element_height = $element.outerHeight();
+			var element_top_position = $element.offset().top;
+			var element_bottom_position = (element_height + element_top_position);
+			
+			if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+      				$element.addClass('in_view');
+      			
+    		} else {
+    	  		$element.removeClass('in_view');
+    		}
 
-		if(content.length > showChar) {
-
-			var c = content.substr(0, showChar);
-			var h = content.substr(showChar-1, content.length - showChar);
-
-			var html = c + '<span class="moreellipses">' + moretoShow+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;</span>';
-
-			$(this).html(html);	}
-
-	});
-	}	
-
-
-	var chat = document.getElementById('innerWrapper');
-	console.log(chat);
-
-
-	var speed_1 = 0.5; 
-	var speed_2 = 0.3;
-	var speed_3 = 0.1;
-	var backgrounds = document.getElementsByClassName('header'); // take the elemets with the header tag
+		});
+	}
 
 	
 
+// if we have three layers to be parallax we need three speeds to move them seperately
+	var speed_1 = 0.5; 
+	var speed_2 = 0.3;
+	var speed_3 = 0.1;
+	var backgrounds = document.getElementsByClassName('header'); // take the elemets with the header tag	
+	//var callout_image = document.getElementsByClassName('callout')[0];
 	window.onscroll = function(){ // when page is scrolled move each layer with seperate speeds
 		
 		var pageOffset = window.pageYOffset;
@@ -56,9 +54,11 @@
 		var background = backgrounds[2];
 		val = "50%"+(pageYOffset*speed_3)+"px";
 		background.style.backgroundPosition = val;
+		console.log("scrolling happaing");
 
-		console.log(val);
+		check_if_in_view();
 
+		
 	}
 
 // $(document).ready(function(){

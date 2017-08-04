@@ -11,6 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:700');
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
+@import url('https://fonts.googleapis.com/css?family=Give+You+Glory');
 
 html,
 body {
@@ -27,6 +28,17 @@ ul {
     margin: 0;
 }
 
+p{
+    font-size: 16px;
+    /*text-align: justify;*/
+
+}
+
+h3 {
+    font-family: 'Give You Glory', cursive;
+    font-size: 30px;
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
@@ -38,8 +50,8 @@ ul {
     padding: 0;
     font-size: 6.75em;
     font-weight: 100;
-    font-family: 'Lobster Two', cursive;
-    /*font-family: 'Poiret One', cursive;*/
+    /*font-family: 'Lobster Two', cursive;*/
+    font-family: 'Give You Glory', cursive;
     color:white;
 
 }
@@ -222,15 +234,20 @@ hr.small {
     width: 100%;
     padding: 100px 0;
     color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    background:url(../img/background_2.jpg);
+    -webkit-background-position: center;
+    -moz-background-position: center;
+    -ms-background-position: center;
+    -o-background-position: center;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover;
     -o-background-size: cover;
+    background-size: cover; 
 }
 
 .callout .text-vertical-center h1{
-    color: black;
+    color: white;
 }
 
 /* Portfolio */
@@ -423,6 +440,21 @@ footer {
     margin: 10px;
 }
 
+.animated.in_view {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.animated {
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-out, transform 300ms ease-out;
+    -o-transition: opacity 1s ease-out, transform 300ms ease-out;
+    transition: opacity 1s ease-out, transform 300ms ease-out;
+    transform: translateY(200px);
+    visibility: hidden;
+    /*visibility: hidden; */
+}
 @keyframes fadeIn {
     0%{
         opacity: 0;
@@ -540,6 +572,14 @@ footer {
 
     .portfolio-item ul li {
         text-align: center;
+    }
+
+    .text-vertical-center h1{
+        font-size: 5em;
+    }
+
+    .text-vertical-center h3{
+        font-size: 2em;
     }
 }
 
